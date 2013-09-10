@@ -74,9 +74,10 @@ Vagrant.configure("2") do |config|
   # Enable provisioning with chef server, specifying the chef server URL,
   # and the path to the validation key (relative to this Vagrantfile).
   #
-   config.vm.provision :chef_client do |chef|
-     chef.chef_server_url = "https://api.opscode.com/organizations/my_server"
-     chef.validation_client_name = "my_server-validator"
-     chef.validation_key_path = ".chef/my_server-validator.pem"
-   end
+ # config.vm.provision :chef_client do |chef|
+  #   chef.chef_server_url = "https://api.opscode.com/organizations/my_server"
+   #  chef.validation_client_name = "my_server-validator"
+    # chef.validation_key_path = ".chef/my_server-validator.pem"
+    # chef.node_name = "amar_vm"
+ # end
 end
